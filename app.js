@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var gridbuildRouter = require('./routes/gridbuild');
 var selectorRouter = require('./routes/selector');
-var nutsRouter = require('./routes/nuts');
+var nutsRouter = require('./routes/Nuts');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/selector', selectorRouter);
-app.use('/nuts', nutsRouter);
+app.use('/Nuts', nutsRouter);
 app.use('/gridbuild', gridbuildRouter);
 
 // catch 404 and forward to error handler
